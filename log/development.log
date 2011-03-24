@@ -79,3 +79,81 @@ NoMethodError (undefined method `validates' for #<Class:0xa22e5ac>):
 Rendered rescues/_trace (28.1ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-03-24 15:15:20) [GET]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `validates' for #<Class:0x92ead48>):
+  app/models/product.rb:23:in `<class:Product>'
+  app/models/product.rb:9:in `<top (required)>'
+  app/controllers/store_controller.rb:4:in `index'
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (31.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20110302061125)
+Migrating to CreateCarts (20110302100739)
+Migrating to CreateLineItems (20110302102945)
+Migrating to AddQuantityToLineItem (20110303055559)
+Migrating to CombineItemsInCart (20110303061502)
+Migrating to CreateOrders (20110303084548)
+Migrating to AddOrderIdToLineItem (20110303084637)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("carts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("line_items")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20110302061125)
+Migrating to CreateCarts (20110302100739)
+Migrating to CreateLineItems (20110302102945)
+Migrating to AddQuantityToLineItem (20110303055559)
+Migrating to CombineItemsInCart (20110303061502)
+Migrating to CreateOrders (20110303084548)
+Migrating to AddOrderIdToLineItem (20110303084637)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("carts")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("line_items")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
