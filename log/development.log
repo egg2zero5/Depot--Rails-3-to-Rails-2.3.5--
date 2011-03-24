@@ -157,3 +157,630 @@ Migrating to AddOrderIdToLineItem (20110303084637)
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("orders")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20110302061125)
+Migrating to CreateCarts (20110302100739)
+Migrating to CreateLineItems (20110302102945)
+Migrating to AddQuantityToLineItem (20110303055559)
+Migrating to CombineItemsInCart (20110303061502)
+Migrating to CreateOrders (20110303084548)
+Migrating to AddOrderIdToLineItem (20110303084637)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("carts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("line_items")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-03-24 15:21:32) [GET]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `validates' for #<Class:0x9fd4d88>):
+  app/models/product.rb:23:in `<class:Product>'
+  app/models/product.rb:9:in `<top (required)>'
+  app/controllers/store_controller.rb:4:in `index'
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (27.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-03-24 15:21:41) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `validates' for #<Class:0x97a7f5c>):
+  app/models/product.rb:23:in `<class:Product>'
+  app/models/product.rb:9:in `<top (required)>'
+  app/controllers/store_controller.rb:4:in `index'
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (54.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-03-24 15:22:27) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `validates' for #<Class:0x9dda190>):
+  app/models/product.rb:23:in `<class:Product>'
+  app/models/product.rb:9:in `<top (required)>'
+  app/controllers/store_controller.rb:4:in `index'
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-03-24 15:25:17) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `validates' for #<Class:0x90df288>):
+  app/models/product.rb:23:in `<class:Product>'
+  app/models/product.rb:9:in `<top (required)>'
+  app/controllers/products_controller.rb:5:in `index'
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (27.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-03-24 16:20:56) [GET]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `validates' for #<Class:0x9bc1e58>):
+  app/models/product.rb:23:in `<class:Product>'
+  app/models/product.rb:9:in `<top (required)>'
+  app/controllers/products_controller.rb:5:in `index'
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-03-24 16:25:07) [GET]
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/application
+Rendering products/index
+ERROR: compiling _run_erb_app47views47layouts47application46html46erb RAISED /home/egg2zero5/rails02_projects/depotnew/app/views/layouts/application.html.erb:22: syntax error, unexpected ')'
+...ems.empty?, :id => "cart") do ).to_s); @output_buffer.concat...
+...                               ^
+/home/egg2zero5/rails02_projects/depotnew/app/views/layouts/application.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+;  end ; @output_buffer.concat "\n ...
+      ^
+/home/egg2zero5/rails02_projects/depotnew/app/views/layouts/application.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+/home/egg2zero5/rails02_projects/depotnew/app/views/layouts/application.html.erb:56: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _run_erb_app47views47layouts47application46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html>\n<html>\n<head>\n  <title>Pragprog Books Online Store</title>\n<!-- START:stylesheet -->\n  "
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag "scaffold" ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( stylesheet_link_tag "depot", :media => "all" ).to_s); @output_buffer.concat "\n<!-- END:stylesheet -->\n  "
+
+; @output_buffer.concat(( javascript_include_tag :defaults ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( csrf_meta_tag ).to_s); @output_buffer.concat "\n</head>\n<body id=\"store\">\n  <div id=\"banner\">\n\n    "
+
+
+
+
+; @output_buffer.concat(( image_tag("logo.png",:weight=>'30px',:height=>'40px') ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( @page_title || "Pragmatic Bookshelf" ).to_s); @output_buffer.concat "\n  </div>\n  <div id=\"columns\">\n    <div id=\"side\">\n      <!-- START:hidden_div -->\n      "
+
+
+
+
+;  if @cart ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( hidden_div_if(@cart.line_items.empty?, :id => "cart") do ).to_s); @output_buffer.concat "\n          "
+; @output_buffer.concat(( render @cart ).to_s); @output_buffer.concat "\n        "
+;  end ; @output_buffer.concat "\n      "
+;  end ; @output_buffer.concat "\n    <!-- END:hidden_div -->\n\n      <a href=\"http://www....\">Home</a><br />\n      <a href=\"http://www..../faq\">Questions</a><br />\n      <a href=\"http://www..../news\">News</a><br />\n      <a href=\"http://www..../contact\">Contact</a><br />\n<!-- START_HIGHLIGHT -->\n       \n   <!--   <#% if session[:user_id] %>\n        <br />\n\n        <#%= link_to 'Orders',   orders_path   %><br />\n        <#%= link_to 'Products', products_path %><br />\n        <#%= link_to 'Users',    users_path    %><br />\n        <br />\n        <#%= button_to 'Logout', logout_path, :method => :delete   %>\n      <#% end %>\n -->\n<!-- END_HIGHLIGHT -->\n    </div>\n    <div id=\"time\">"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( Time.now ).to_s); @output_buffer.concat "</div>\n    <div id=\"main\">\n      "
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n    </div>\n  </div>\n</body>\n</html>\n"
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `block in custom'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `block in respond'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/egg2zero5/rails02_projects/depotnew/app/controllers/products_controller.rb:7:in `index'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (/home/egg2zero5/rails02_projects/depotnew/app/views/layouts/application.html.erb:22: syntax error, unexpected ')'
+...ems.empty?, :id => "cart") do ).to_s); @output_buffer.concat...
+...                               ^
+/home/egg2zero5/rails02_projects/depotnew/app/views/layouts/application.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+;  end ; @output_buffer.concat "\n ...
+      ^
+/home/egg2zero5/rails02_projects/depotnew/app/views/layouts/application.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+/home/egg2zero5/rails02_projects/depotnew/app/views/layouts/application.html.erb:56: syntax error, unexpected keyword_end, expecting ')') on line #22 of app/views/layouts/application.html.erb:
+19:     <div id="side">
+20:       <!-- START:hidden_div -->
+21:       <% if @cart %>
+22:         <%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+23:           <%= render @cart %>
+24:         <% end %>
+25:       <% end %>
+
+    app/controllers/products_controller.rb:7:in `index'
+    <internal:prelude>:10:in `synchronize'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (57.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-03-24 16:30:43) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/application
+Rendering products/index
+
+ActionView::TemplateError (undefined local variable or method `csrf_meta_tag' for #<ActionView::Base:0x9cafb58>) on line #10 of app/views/layouts/application.html.erb:
+7:   <%= stylesheet_link_tag "depot", :media => "all" %>
+8: <!-- END:stylesheet -->
+9:   <%= javascript_include_tag :defaults %>
+10:   <%= csrf_meta_tag %>
+11: </head>
+12: <body id="store">
+13:   <div id="banner">
+
+    app/views/layouts/application.html.erb:10
+    app/controllers/products_controller.rb:7:in `index'
+    <internal:prelude>:10:in `synchronize'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (57.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-03-24 16:32:09) [GET]
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/application
+Rendering products/index
+
+ActionView::TemplateError (undefined local variable or method `csrf_meta_tag' for #<ActionView::Base:0x9d68c5c>) on line #11 of app/views/layouts/application.html.erb:
+8: <!-- END:stylesheet -->
+9:   <!--
+10:   <%= javascript_include_tag :defaults %>
+11:   <%= csrf_meta_tag %>
+12:   -->
+13: 
+14: </head>
+
+    app/views/layouts/application.html.erb:11
+    app/controllers/products_controller.rb:7:in `index'
+    <internal:prelude>:10:in `synchronize'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (55.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-03-24 16:32:30) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/application
+Rendering products/index
+
+ActionView::TemplateError (Missing template products/_cart.erb in view path /home/egg2zero5/rails02_projects/depotnew/app/views) on line #25 of app/views/layouts/application.html.erb:
+22:     <div id="side">
+23:   
+24:   <div id="cart">
+25:   <%= render(:partial => "cart" , :object => @cart) %>
+26:   </div
+27:  
+28: 
+
+    app/views/layouts/application.html.erb:25
+    app/controllers/products_controller.rb:7:in `index'
+    <internal:prelude>:10:in `synchronize'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-03-24 16:33:10) [GET]
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-24 16:33:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-24 16:33:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-24 16:33:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/depot.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-24 16:33:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/ruby.jpg" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-24 16:33:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/ruby.jpg" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2011-03-24 16:33:23) [GET]
+Rendering template within layouts/application
+Rendering products/new
+ERROR: compiling _run_erb_app47views47products47_form46html46erb_locals_form_object RAISED /home/egg2zero5/rails02_projects/depotnew/app/views/products/_form.html.erb:1: syntax error, unexpected ')'
+...t(( form_for(@product) do |f| ).to_s); @output_buffer.concat...
+...                               ^
+/home/egg2zero5/rails02_projects/depotnew/app/views/products/_form.html.erb:35: syntax error, unexpected keyword_ensure, expecting ')'
+/home/egg2zero5/rails02_projects/depotnew/app/views/products/_form.html.erb:37: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _run_erb_app47views47products47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;form = local_assigns[:form];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( form_for(@product) do |f| ).to_s); @output_buffer.concat "\n  "
+;  if @product.errors.any? ; @output_buffer.concat "\n    <div id=\"error_explanation\">\n      <h2>"
+
+; @output_buffer.concat(( pluralize(@product.errors.count, "error") ).to_s); @output_buffer.concat " prohibited this product from being saved:</h2>\n      <!-- automatically pluralize a word in Ruby on Rails -->\n      <ul>\n      "
+
+
+;  @product.errors.full_messages.each do |msg| ; @output_buffer.concat "\n        <li>"
+; @output_buffer.concat(( msg ).to_s); @output_buffer.concat "</li>\n      "
+;  end ; @output_buffer.concat "\n      </ul>\n    </div>\n  "
+
+
+;  end ; @output_buffer.concat "\n\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "<br />    \n    "
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :description ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :description ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :image_url ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :image_url ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :price ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :price ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"actions\">\n    "
+
+
+; @output_buffer.concat(( f.submit ).to_s); @output_buffer.concat "\n  </div>\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `block in render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `block in benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/base.rb:276:in `render'
+/home/egg2zero5/rails02_projects/depotnew/app/views/products/new.html.erb:3:in `_run_erb_app47views47products47new46html46erb'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `block in render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `block in custom'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `block in respond'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/egg2zero5/rails02_projects/depotnew/app/controllers/products_controller.rb:29:in `new'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/egg2zero5/.rvm/gems/ruby-1.9.2-p180@rails2/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (/home/egg2zero5/rails02_projects/depotnew/app/views/products/_form.html.erb:1: syntax error, unexpected ')'
+...t(( form_for(@product) do |f| ).to_s); @output_buffer.concat...
+...                               ^
+/home/egg2zero5/rails02_projects/depotnew/app/views/products/_form.html.erb:35: syntax error, unexpected keyword_ensure, expecting ')'
+/home/egg2zero5/rails02_projects/depotnew/app/views/products/_form.html.erb:37: syntax error, unexpected keyword_end, expecting ')') on line #1 of app/views/products/_form.html.erb:
+1: <%= form_for(@product) do |f| %>
+2:   <% if @product.errors.any? %>
+3:     <div id="error_explanation">
+4:       <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+    app/views/products/new.html.erb:3
+    app/controllers/products_controller.rb:29:in `new'
+    <internal:prelude>:10:in `synchronize'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (64.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-03-24 16:33:53) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+  [4;36;1mCart Create (0.5ms)[0m   [0;1mINSERT INTO "carts" ("created_at", "updated_at") VALUES('2011-03-24 08:33:53', '2011-03-24 08:33:53')[0m
+Rendering template within layouts/application
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `notice' for #<ActionView::Base:0x9ddd804>) on line #1 of app/views/store/index.html.erb:
+1: <% if notice %>
+2: <p id="notice"><%= notice %></p>
+3: <% end %>
+4: 
+
+    app/views/store/index.html.erb:1
+    <internal:prelude>:10:in `synchronize'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /home/egg2zero5/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (54.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
